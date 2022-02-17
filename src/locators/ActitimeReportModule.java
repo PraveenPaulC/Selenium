@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Actitime1 {
+public class ActitimeReportModule {
 	static
 	{
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -17,12 +17,15 @@ public class Actitime1 {
 		
 		driver.findElement(By.id("username")).sendKeys("admin");
 		driver.findElement(By.name("pwd")).sendKeys("manager");
-		Thread.sleep(2000);
-		driver.findElement(By.tagName("a")).click();
+	
+		driver.findElement(By.xpath("//div[text()='Login ']")).click();		
 		
-		Thread.sleep(10000);
+		
+		driver.findElement(By.id("container_reports")).click();
+		Thread.sleep(2000);
 		driver.close();
+
 		
 	}
-	
+
 }
