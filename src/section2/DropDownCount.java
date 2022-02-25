@@ -25,10 +25,6 @@ public class DropDownCount {
 		WebElement element = driver.findElement(By.id("gh-cat"));
 		Select s=new Select(element);
 		
-		//To check if it is a single or multiple dropdown
-		boolean Check = s.isMultiple();
-		System.out.println(Check);
-		
 		//To get a list of the dropdown options(items), we use getOptions method
 		List<WebElement> options = s.getOptions();
 		
@@ -42,6 +38,10 @@ public class DropDownCount {
 		{
 			System.out.println(b.getText());
 		}
+		
+		//To verify if it is a single or multiple dropdown
+		boolean Check = s.isMultiple();
+		System.out.println(Check);
 		
 		Thread.sleep(3000);
 		driver.close();
