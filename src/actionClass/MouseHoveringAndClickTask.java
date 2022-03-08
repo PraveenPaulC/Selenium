@@ -2,6 +2,7 @@ package actionClass;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,6 +35,7 @@ public class MouseHoveringAndClickTask {
 		WebElement element1 = driver.findElement(By.id("add"));
 		a.doubleClick(element1).perform();
 		
+			
 		Thread.sleep(3000);
 		driver.close();
 
