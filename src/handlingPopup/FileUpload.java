@@ -22,7 +22,7 @@ public class FileUpload {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,500)");
 		
-		driver.findElement(By.id("fileupload")).sendKeys("C:\\Users\\Praveen\\Pictures\\Screenshots\\Screenshot (573).png");
+		driver.findElement(By.id("fileupload")).sendKeys("C:\\Users\\Praveen\\Pictures\\Screenshots\\Selenium\\Screenshot (555).png");
 				
 		Thread.sleep(3000);
 		driver.quit();

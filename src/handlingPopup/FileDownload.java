@@ -18,9 +18,10 @@ public class FileDownload {
 		FirefoxDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.selenium.dev/downloads/");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		driver.findElement(By.linkText("4.1.2")).click();
+		Thread.sleep(3000);
 		
 		Robot r=new Robot();
 		r.keyPress(KeyEvent.VK_LEFT); 
