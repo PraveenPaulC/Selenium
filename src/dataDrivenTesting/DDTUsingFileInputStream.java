@@ -6,11 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class DDTUsingFileInputStream {
-	static
-	{
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-	}
-
+	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 				
 		Properties p = new Properties();
