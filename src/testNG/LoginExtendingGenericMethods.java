@@ -22,7 +22,7 @@ public class LoginExtendingGenericMethods extends GenericMethods {
 		String actual = driver.getTitle();
 		Reporter.log(actual, true); //true to print on console
 		
-		String expected = "actiTIME - Entr Time-Track";
+		String expected = "actiTIME - Enter Time-Track";
 		
 		
 		Assert.assertEquals(actual, expected); //Hard Assert (contains Static Methos)
